@@ -1,1 +1,1139 @@
-<h3>Healthcare Services</h3>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sehat Clinic – Men's & Women's Health</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announce">
+    🌿 Lahore Exclusive — Mard aur Khawateen dono ke liye herbal ilaj &nbsp;|&nbsp; <strong>Free Consultation</strong>
+    on WhatsApp &nbsp;|&nbsp; <a href="https://wa.me/923147730687" style="color:var(--gold2);font-weight:700;">Abhi
+      Contact Karein ↗</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><i class="fas fa-leaf me-2"></i>Sehat<span> Clinic</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#problems">Mard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#women">Khawateen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2">
+            <a href="https://wa.me/923147730687" target="_blank" class="btn-wa"
+              style="padding:8px 18px;font-size:.82rem;">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </li>
+          <li class="nav-item ms-1">
+            <button onclick="openCart()"
+              style="position:relative;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1rem;transition:.2s;"
+              onmouseover="this.style.background='rgba(255,255,255,.2)'"
+              onmouseout="this.style.background='rgba(255,255,255,.1)'">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cartBadge"
+                style="display:none;position:absolute;top:-4px;right:-4px;background:var(--gold);color:#000;font-size:.65rem;font-weight:700;width:18px;height:18px;border-radius:50%;align-items:center;justify-content:center;">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-content">
+          <div class="hero-badge"><i class="fas fa-shield-alt"></i> Trusted Since 2004 — 20+ Years</div>
+          <h1>Pakistan ka <span>#1 Trusted</span><br>Herbal Health Clinic</h1>
+          <p class="hero-sub">Mard aur Khawateen dono ke liye — Mardana Kamzori, Aulad Na Hona, Khawateen ke Masail —
+            sab ka qudrati herbal ilaj. Ghar baithe, bilkul private.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20consultation%20chahiye."
+              target="_blank" class="btn-wa">
+              <i class="fab fa-whatsapp"></i> Free Consultation Lo
+            </a>
+            <a href="#problems" class="btn-outline-gold">
+              <i class="fas fa-chevron-down"></i> Problems Dekhein
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num" data-target="5000">0</div>
+              <div class="stat-label">Happy Patients</div>
+            </div>
+            <div>
+              <div class="stat-num" data-target="20">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div>
+              <div class="stat-num" data-target="98">0</div>
+              <div class="stat-label">% Success Rate</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 hero-visual d-none d-lg-flex">
+          <div class="hero-circle">
+            <i class="fas fa-mortar-pestle"></i>
+            <p>100% Natural<br>Herbal Ingredients<br><strong style="color:var(--gold);">Zero Side Effects</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems -->
+  <section id="problems" class="py-5" style="background:#fff;padding-top:96px!important;padding-bottom:96px!important;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Mardon Ke Khaas Masail</h2>
+        <p class="section-sub">Mard hazeeon ke har maslay ka qudrati aur proven herbal ilaj</p>
+      </div>
+
+      <!-- Men Hero Strip -->
+      <div
+        style="background:linear-gradient(135deg,var(--g1),var(--g2));border-radius:20px;padding:36px;color:#fff;margin-bottom:44px;position:relative;overflow:hidden;">
+        <div style="position:absolute;inset:0;background:url(\" data:image/svg+xml,%3Csvg width='60' height='60'
+          viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg' %3E%3Cg fill='none' %3E%3Cg fill='%23ffffff'
+          fill-opacity='0.04' %3E%3Ccircle cx='30' cy='30' r='3' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E\");"></div>
+        <div class="row align-items-center" style="position:relative;z-index:2;">
+          <div class="col-lg-8">
+            <span
+              style="display:inline-block;background:rgba(201,168,76,.2);border:1px solid rgba(201,168,76,.4);color:var(--gold2);padding:5px 14px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;"><i
+                class="fas fa-shield-alt me-1"></i> Sirf Mardon Ke Liye</span>
+            <h3 style="font-family:'Playfair Display',serif;font-size:1.7rem;font-weight:900;margin-bottom:8px;">Mardana
+              Sehat — Bilkul Private Mashwara</h3>
+            <p style="color:rgba(255,255,255,.8);font-size:.92rem;max-width:520px;">Mardana kamzori, timing, aulad ya
+              koi bhi mardana masla — hum se bilkul secretly baat karein. 20+ saal ka tajurba, 5000+ satisfied patients.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center mt-3 mt-lg-0">
+            <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20mardana%20masail%20ke%20baare%20mein%20private%20consultation%20chahiye."
+              target="_blank" class="btn-wa"
+              style="display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-weight:600;">
+              <i class="fab fa-whatsapp"></i> Private Consultation Lo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="mb-4" style="font-family:'Playfair Display',serif;color:var(--g1);font-weight:700;">Mardon Ke Aam
+        Masail</h4>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-bolt"></i></div>
+            <h5>Mardana Kamzori</h5>
+            <p>Jism mein energy aur quwwat ki kami, thakaan, aur daily life mein weakness.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-clock"></i></div>
+            <h5>Jaldi Faraghat</h5>
+            <p>Timing ki kami aur satisfaction na milna — ye masla 80% mard face karte hain.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-baby"></i></div>
+            <h5>Aulad Na Hona</h5>
+            <p>Mard ki taraf se aulad na hone ka masla — male fertility ka proven herbal ilaj.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-heart"></i></div>
+            <h5>Shadi Se Pehle Masail</h5>
+            <p>Nai shadi se pehle mardana health tayyari aur confidence ki kami ka herbal solution.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-dumbbell"></i></div>
+            <h5>Jisim Mein Kamzori</h5>
+            <p>Haath paon mein dard, bones ki kamzori aur overall body weakness ka ilaj.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prob-card" onclick="location.href='#problems'">
+            <div class="prob-icon"><i class="fas fa-brain"></i></div>
+            <h5>Stress & Anxiety</h5>
+            <p>Mental stress, neend na aana, anxiety aur tension se nijaat ka qudrati ilaj.</p>
+            <a href="#problems" class="btn-link-green">Solution Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Men Products sub-heading -->
+      <h4 class="mt-5 mb-4" style="font-family:'Playfair Display',serif;color:var(--g1);font-weight:700;">Mardon Ke Liye
+        Special Products</h4>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-best">Best Seller</span>
+              <i class="fas fa-fire-alt d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Most Popular</p>
+            </div>
+            <div class="prod-body">
+              <h5>Shakti Vardhak Churan</h5>
+              <p>Mardana quwwat aur energy boost ke liye powerful herbal blend. Immediate results.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(4.5 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Shakti%20Vardhak%20Churan%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-new">New</span>
+              <i class="fas fa-spa d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Timing Formula</p>
+            </div>
+            <div class="prod-body">
+              <h5>Vaqt Badhao Oil</h5>
+              <p>Timing ki problem ka guaranteed herbal solution — 100% natural ingredients.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><span>(4.8 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Vaqt%20Badhao%20Oil%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-hot">Popular</span>
+              <i class="fas fa-mortar-pestle d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Fertility Formula</p>
+            </div>
+            <div class="prod-body">
+              <h5>Nirog Kesar Tonic</h5>
+              <p>Mard ki fertility boost karne ka proven herbal tonic — aulad ke masle ka ilaj.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><span>(5.0 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Nirog%20Kesar%20Tonic%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-best">Top Rated</span>
+              <i class="fas fa-leaf d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Strength Booster</p>
+            </div>
+            <div class="prod-body">
+              <h5>Hamdard Power Mix</h5>
+              <p>Jism ki overall strength aur stamina ke liye complete herbal package.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(4.6 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Hamdard%20Power%20Mix%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-new">New</span>
+              <i class="fas fa-pills d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Bone & Joint</p>
+            </div>
+            <div class="prod-body">
+              <h5>Haddiyat Strong Capsule</h5>
+              <p>Haath paon mein dard aur bones ki kamzori ka qudrati aur desi ilaj.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><span>(4.9 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Haddiyat%20Strong%20Capsule%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="prod-card">
+            <div class="prod-top">
+              <span class="prod-badge badge-hot">Hot</span>
+              <i class="fas fa-brain d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Mind & Stress</p>
+            </div>
+            <div class="prod-body">
+              <h5>Sakoon Herbal Tea</h5>
+              <p>Neend ki takleef, stress aur anxiety ka shukr aur effective herbal remedy.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(4.7 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Sakoon%20Herbal%20Tea%20ke%20baare%20mein%20consult%20karna%20hai."
+                  target="_blank" class="btn-order"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Women's Section -->
+  <section id="women" class="py-5"
+    style="background:var(--rose-light);padding-top:96px!important;padding-bottom:96px!important;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title-rose">Auraton Ke Khaas Masail</h2>
+        <p class="section-sub">Behno aur Maaon ke liye — bilkul private aur mehfooz herbal ilaj</p>
+      </div>
+
+      <!-- Women Hero Strip -->
+      <div class="women-hero-strip">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="women-badge"><i class="fas fa-lock me-1"></i> 100% Private & Confidential</span>
+            <h3>Aap Akeli Nahi Hain — Hum Hain Aapke Saath</h3>
+            <p>Chahe shadi se pehle ki tension ho, aulad na hone ka dard ho, ya koi aur khaas masla — hamare yahan sab
+              ka qudrati aur safe herbal ilaj maujood hai. Koi judgment nahi, puri privacy.</p>
+          </div>
+          <div class="col-lg-4 text-center mt-3 mt-lg-0">
+            <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20khawateen%20ke%20masail%20ke%20baare%20mein%20private%20consultation%20chahiye."
+              target="_blank" class="btn-wa"
+              style="background:rgba(255,255,255,.2);border:2px solid rgba(255,255,255,.5);display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-weight:600;color:#fff;text-decoration:none;">
+              <i class="fab fa-whatsapp"></i> Private Consultation Lo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Women Problems -->
+      <h4 class="mb-4" style="font-family:'Playfair Display',serif;color:var(--rose1);font-weight:700;">Khawateen Ke Aam
+        Masail</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-baby"></i></div>
+            <h5>Aulad Na Hona</h5>
+            <p>Shadi ke baad aulad na hona — female fertility issues ka proven qudrati ilaj. Hormonal balance restore
+              karna.</p>
+            <a href="https://wa.me/923147730687?text=Mujhe%20aulad%20na%20hone%20ke%20masle%20ka%20ilaj%20chahiye."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-ring"></i></div>
+            <h5>Shadi Se Pehle Ki Tension</h5>
+            <p>Nai zindagi ki shuruat — physical aur emotional tayyari ke liye complete herbal guidance.</p>
+            <a href="https://wa.me/923147730687?text=Shadi%20se%20pehle%20ke%20masail%20ke%20baare%20mein%20consultation%20chahiye."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-moon"></i></div>
+            <h5>Periods Ki Takleef</h5>
+            <p>Irregular periods, dard, ya heavy bleeding — haiz ke masail ka qudrati aur asardar herbal ilaj.</p>
+            <a href="https://wa.me/923147730687?text=Periods%20ke%20masail%20ke%20ilaj%20ke%20baare%20mein%20puchna%20tha."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-heartbeat"></i></div>
+            <h5>Shadi Ke Baad Ke Masail</h5>
+            <p>Nai shadi ke baad physical discomfort ya hormonal changes — gentle aur effective herbal solutions.</p>
+            <a href="https://wa.me/923147730687?text=Shadi%20ke%20baad%20ke%20masail%20ka%20herbal%20ilaj%20chahiye."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-spa"></i></div>
+            <h5>Jisim Ki Kamzori</h5>
+            <p>Thakaan, haath paon mein dard, khoon ki kami — khawateen ke liye special strength tonic.</p>
+            <a href="https://wa.me/923147730687?text=Khawateen%20ki%20jisim%20kamzori%20ke%20ilaj%20ke%20baare%20mein%20puchna%20tha."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprob-card">
+            <div class="wprob-icon"><i class="fas fa-brain"></i></div>
+            <h5>Stress & Depression</h5>
+            <p>Ghar ki zimmedariyan, stress aur anxiety — khawateen ke liye soothing herbal remedy.</p>
+            <a href="https://wa.me/923147730687?text=Stress%20aur%20anxiety%20ke%20liye%20khawateen%20ka%20herbal%20ilaj%20chahiye."
+              target="_blank" class="btn-link-rose">Ilaj Dekhein <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Women Products -->
+      <h4 class="mb-4" style="font-family:'Playfair Display',serif;color:var(--rose1);font-weight:700;">Khawateen Ke
+        Liye Special Products</h4>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprod-card">
+            <div class="wprod-top">
+              <span class="prod-badge badge-best" style="position:absolute;top:14px;right:14px;">Best Seller</span>
+              <i class="fas fa-baby d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Fertility Formula</p>
+            </div>
+            <div class="prod-body">
+              <h5 style="color:var(--rose1);">Maa Banne Ki Dua Tonic</h5>
+              <p>Female fertility boost karne ka proven herbal tonic — aulad ke masle ka qudrati ilaj.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><span>(5.0 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Maa%20Banne%20Ki%20Dua%20Tonic%20chahiye."
+                  target="_blank" class="btn-order-rose"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart-rose add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprod-card">
+            <div class="wprod-top">
+              <span class="prod-badge badge-new" style="position:absolute;top:14px;right:14px;">New</span>
+              <i class="fas fa-moon d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Cycle Regulator</p>
+            </div>
+            <div class="prod-body">
+              <h5 style="color:var(--rose1);">Haiz Regulator Churan</h5>
+              <p>Irregular periods aur haiz ke dard ka qudrati ilaj — hormone balance restore kare.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(4.7 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Haiz%20Regulator%20Churan%20chahiye."
+                  target="_blank" class="btn-order-rose"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart-rose add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="wprod-card">
+            <div class="wprod-top">
+              <span class="prod-badge badge-hot"
+                style="position:absolute;top:14px;right:14px;background:#ef4444;color:#fff;">Popular</span>
+              <i class="fas fa-spa d-block"></i>
+              <p style="color:rgba(255,255,255,.7);font-size:.82rem;margin:0;">Strength & Glow</p>
+            </div>
+            <div class="prod-body">
+              <h5 style="color:var(--rose1);">Khawateen Strength Syrup</h5>
+              <p>Khoon ki kami, thakaan aur jisim ki kamzori ka all-in-one herbal syrup.</p>
+              <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i><span>(4.9 / 5)</span></div>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20Khawateen%20Strength%20Syrup%20chahiye."
+                  target="_blank" class="btn-order-rose"><i class="fab fa-whatsapp"></i> Order Now</a>
+                <button class="btn-cart-rose add-to-cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Privacy note -->
+      <div class="mt-5 p-4 rounded-3 text-center"
+        style="background:linear-gradient(135deg,rgba(107,26,58,.08),rgba(181,48,106,.06));border:1px solid rgba(142,34,73,.15);">
+        <i class="fas fa-lock fa-2x mb-3" style="color:var(--rose2);"></i>
+        <h5 style="color:var(--rose1);font-family:'Playfair Display',serif;">Aapki Privacy Hamare Liye Sab Se Pehle Hai
+        </h5>
+        <p style="color:var(--muted);max-width:500px;margin:8px auto 0;font-size:.9rem;">Khawateen ke messages aur
+          orders bilkul secret rakhe jate hain. Delivery plain packaging mein hoti hai — ghar mein kisi ko pata nahi
+          chalta. Seedha WhatsApp pe message karein.</p>
+        <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Mujhe%20khawateen%20ke%20masail%20ke%20baare%20mein%20private%20consultation%20chahiye."
+          target="_blank" class="btn-order-rose mt-3 d-inline-flex"><i class="fab fa-whatsapp"></i> Private Message
+          Karein</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="py-5">
+    <div class="container" style="position:relative;z-index:2;">
+      <div class="text-center mb-5">
+        <span class="section-label" style="background:rgba(201,168,76,.15);color:var(--gold2);">Why Us</span>
+        <h2 class="section-title" style="color:#fff;">Hum Kyun Behtareen Hain?</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.6);">20 saal ka tajurba, 5000+ satisfied patients</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-seedling"></i></div>
+            <h5>100% Natural</h5>
+            <p>Koi chemical nahi, sab qudrati jadibutiyon se tayyar</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-award"></i></div>
+            <h5>20+ Saal Tajurba</h5>
+            <p>Decades of experience in traditional herbal medicine</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-user-secret"></i></div>
+            <h5>Bilkul Private</h5>
+            <p>Aapki har baat bilkul secret rakhi jati hai</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-truck"></i></div>
+            <h5>Ghar Delivery</h5>
+            <p>Lahore mein ghar pe discreet packaging mein delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" style="background:#fff;padding:96px 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">Hamare Patients Kya Kehte Hain</h2>
+        <p class="section-sub">5000+ satisfied patients — real reviews, real results</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testi-text">"Sehat Clinic ka Shakti Vardhak liya, 2 hafton mein hi farq mehsoos hua. Bohot
+              shukriya!"</p>
+            <div class="testi-name">Muhammad Ali</div>
+            <div class="testi-label mb-2">Lahore, Punjab</div>
+            <span class="badge-verified">✓ Verified Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testi-text">"3 saal se aulad nahi thi, Nirog Kesar use ki — Allah ka shukr hai ab khushkhabri
+              mili!"</p>
+            <div class="testi-name">Usman Raza</div>
+            <div class="testi-label mb-2">Lahore, Punjab</div>
+            <span class="badge-verified">✓ Verified Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="testi-text">"Delivery bilkul private thi, kisi ko pata nahi chala. Treatment bhi asardar rahi.
+              Recommend karunga."</p>
+            <div class="testi-name">Kamran Iqbal</div>
+            <div class="testi-label mb-2">Lahore, Punjab</div>
+            <span class="badge-verified">✓ Verified Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testi-text">"WhatsApp pe free consultation mila, price bhi reasonable thi. Shukriya Sehat Clinic!"
+            </p>
+            <div class="testi-name">Bilal Ahmed</div>
+            <div class="testi-label mb-2">Lahore, Punjab</div>
+            <span class="badge-verified">✓ Verified Patient</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Women Reviews -->
+      <div class="text-center mt-5 mb-4">
+        <h4 style="font-family:'Playfair Display',serif;color:var(--rose1);font-weight:700;font-size:1.6rem;">Hamari
+          Behnon Ka Feedback</h4>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card" style="border-left:3px solid var(--rose3);">
+            <div class="testi-stars"><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i></div>
+            <p class="testi-text">"3 saal se aulad nahi thi. Sehat Clinic ka tonic use kiya — Allah ka shukr 6 mahine
+              mein khushkhabri mili!"</p>
+            <div class="testi-name" style="color:var(--rose1);">Amma Farhat</div>
+            <div class="testi-label mb-2">Lahore</div>
+            <span class="badge-verified" style="background:rgba(142,34,73,.1);color:var(--rose2);">✓ Verified
+              Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card" style="border-left:3px solid var(--rose3);">
+            <div class="testi-stars"><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i></div>
+            <p class="testi-text">"Haiz ki takleef se 2 saal pareshan thi. Haiz Regulator liya — pehle mahine mein hi
+              farq aa gaya!"</p>
+            <div class="testi-name" style="color:var(--rose1);">Sadia Ali</div>
+            <div class="testi-label mb-2">Lahore</div>
+            <span class="badge-verified" style="background:rgba(142,34,73,.1);color:var(--rose2);">✓ Verified
+              Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card" style="border-left:3px solid var(--rose3);">
+            <div class="testi-stars"><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star-half-alt" style="color:#e879a0;"></i></div>
+            <p class="testi-text">"Shadi ke baad ke masail ke liye consultation li — bohot izzat se jawab mila. Privacy
+              ka pura khayal rakha!"</p>
+            <div class="testi-name" style="color:var(--rose1);">Nadia parveen</div>
+            <div class="testi-label mb-2">Lahore</div>
+            <span class="badge-verified" style="background:rgba(142,34,73,.1);color:var(--rose2);">✓ Verified
+              Patient</span>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="testi-card" style="border-left:3px solid var(--rose3);">
+            <div class="testi-stars"><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i><i class="fas fa-star"
+                style="color:#e879a0;"></i><i class="fas fa-star" style="color:#e879a0;"></i></div>
+            <p class="testi-text">"Strength Syrup ne 3 hafton mein energy wapis la di. Ghar ka kaam ab asani se hota
+              hai. Bohot acha product!"</p>
+            <div class="testi-name" style="color:var(--rose1);">Anam Shahzad</div>
+            <div class="testi-label mb-2">Lahore</div>
+            <span class="badge-verified" style="background:rgba(142,34,73,.1);color:var(--rose2);">✓ Verified
+              Patient</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" style="padding:96px 0;background:linear-gradient(145deg,#f0fdf0,var(--cream));">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Process</span>
+        <h2 class="section-title">Kaise Order Karein?</h2>
+        <p class="section-sub">Sirf 3 simple steps — bas 2 minute ka kaam</p>
+      </div>
+      <div class="row g-4 step-wrap">
+        <div class="col-md-4">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h5>WhatsApp pe Message Karo</h5>
+            <p>Problem ya product ka naam likh ke +92 314 7730687 pe message karo — free consultation milega.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h5>200 PKR Advance Bhejo</h5>
+            <p>EasyPaisa ya JazzCash se sirf 200 rupay advance send karo — baqi amount delivery pe.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h5>Ghar Pe Delivery Lo</h5>
+            <p>Lahore address pe 2-3 din mein discreet packaging mein delivery — kisi ko pata nahi chalega.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#fff;padding:96px 0;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Aksar Poochhe Jane Wale Sawalat</h2>
+        <p class="section-sub">Koi bhi sawal ho — WhatsApp pe pooch sakte hain</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f1">Kya products 100% herbal hain?</button></h2>
+              <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Haan, hamare sare products qudrati jadibution se banaye jate hain — koi
+                  harmful chemical nahi. Sab ingredients tested aur safe hain.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f2">Kya delivery private hoti hai?</button></h2>
+              <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Bilkul! Hum plain brown packaging use karte hain — bahar koi naam ya clinic
+                  ka nishaan nahi hota. Puri privacy guaranteed.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f3">Delivery mein kitna waqt lagta hai?</button></h2>
+              <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">200 PKR advance milne ke baad Lahore mein 2-3 business days mein delivery ho
+                  jati hai. Advance amount order confirmation aur processing ke liye li jati hai.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f4">Kya return policy hai?</button></h2>
+              <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Agar product seal band ho toh 3 din mein return kar sakte hain. WhatsApp pe
+                  contact karein.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f5">Kya Lahore ke bahar bhi delivery hoti hai?</button>
+              </h2>
+              <div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Filhaal hum sirf Lahore mein service dete hain. Bahar ke orders ke liye
+                  WhatsApp pe puchein.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#f6">Kya online consultation free hai?</button></h2>
+              <div id="f6" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">Haan! WhatsApp pe pehli consultation bilkul free hai. Apni problem share
+                  karein aur hamare expert se guidance lein.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label" style="background:rgba(201,168,76,.15);color:var(--gold2);">Contact</span>
+        <h2 class="section-title" style="color:#fff;">Abhi Contact Karein</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.6);">Free consultation ke liye message karein — koi bhi
+          sawal ho</p>
+      </div>
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-6">
+          <div class="contact-form-wrap">
+            <h5 style="color:#fff;font-family:'Playfair Display',serif;margin-bottom:24px;">Message Bhejein</h5>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label class="form-label">Aapka Naam</label>
+                <input type="text" class="form-control" id="cname" placeholder="Ali">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="cphone" placeholder="03XX-XXXXXXX">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Kya Masla Hai?</label>
+                <select class="form-control form-select" id="cproblem"
+                  style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;">
+                  <option value="" style="color:#000;">Problem select karein...</option>
+                  <optgroup label="── Mard ke Masail ──" style="color:#555;">
+                    <option value="Mardana Kamzori" style="color:#000;">Mardana Kamzori</option>
+                    <option value="Timing Issues" style="color:#000;">Timing Issues</option>
+                    <option value="Aulad Na Hona (Mard)" style="color:#000;">Aulad Na Hona</option>
+                    <option value="Jisim Ki Kamzori" style="color:#000;">Jisim Ki Kamzori</option>
+                    <option value="Stress & Anxiety" style="color:#000;">Stress & Anxiety</option>
+                  </optgroup>
+                  <optgroup label="── Khawateen Ke Masail ──" style="color:#555;">
+                    <option value="Aulad Na Hona (Khawateen)" style="color:#000;">Aulad Na Hona</option>
+                    <option value="Shadi Se Pehle Ki Tension" style="color:#000;">Shadi Se Pehle Ki Tension</option>
+                    <option value="Periods Ki Takleef" style="color:#000;">Periods Ki Takleef</option>
+                    <option value="Shadi Ke Baad Ke Masail" style="color:#000;">Shadi Ke Baad Ke Masail</option>
+                    <option value="Khawateen Jisim Kamzori" style="color:#000;">Jisim Ki Kamzori</option>
+                    <option value="Stress & Depression (Khawateen)" style="color:#000;">Stress & Depression</option>
+                  </optgroup>
+                  <option value="Kuch Aur" style="color:#000;">Kuch Aur</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label class="form-label">Kuch Aur Batana Chahte Hain? (Optional)</label>
+                <textarea class="form-control" id="cmsg" rows="3"
+                  placeholder="Apni problem detail mein batayein..."></textarea>
+              </div>
+              <button type="submit" class="btn-wa w-100 justify-content-center" style="border:none;cursor:pointer;">
+                <i class="fab fa-whatsapp"></i> WhatsApp Pe Bhejein
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h5 style="color:#fff;font-family:'Playfair Display',serif;margin-bottom:24px;">Direct Contact</h5>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h6>WhatsApp</h6>
+              <p>03147730687 — 24/7 available</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h6>Email</h6>
+              <p>afaqtahir0687@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>Lahore, Punjab — Home delivery available</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h6>Hours</h6>
+              <p>Mon–Sat: 9am–10pm | Sun: 10am–6pm</p>
+            </div>
+          </div>
+          <a href="https://wa.me/923147730687?text=Assalam%20o%20Alaikum!%20Free%20consultation%20chahiye."
+            target="_blank" class="btn-wa mt-3 d-inline-flex">
+            <i class="fab fa-whatsapp"></i> Free Consultation Lo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-2"><i class="fas fa-leaf me-2"></i>Sehat<span> Clinic</span></div>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.55);line-height:1.7;max-width:280px;">Pakistan ka trusted
+            herbal men's health clinic. 20+ saal ka tajurba, 5000+ satisfied patients.</p>
+        </div>
+        <div class="col-sm-6 col-lg-2">
+          <h6 style="color:var(--gold);font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">
+            Quick Links</h6>
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#problems" class="footer-link">Mard Section</a>
+          <a href="#women" class="footer-link">Khawateen Section</a>
+          <a href="#testimonials" class="footer-link">Reviews</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <h6 style="color:var(--gold);font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">
+            Treatments</h6>
+          <a href="#problems" class="footer-link">Mardana Kamzori</a>
+          <a href="#problems" class="footer-link">Timing Issues</a>
+          <a href="#problems" class="footer-link">Male Fertility</a>
+          <a href="#women" class="footer-link">Female Fertility</a>
+          <a href="#women" class="footer-link">Periods Ki Takleef</a>
+          <a href="#women" class="footer-link">Shadi Ke Masail</a>
+        </div>
+        <div class="col-lg-3">
+          <h6 style="color:var(--gold);font-size:.8rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;">
+            Contact</h6>
+          <p style="font-size:.83rem;color:rgba(255,255,255,.55);"><i class="fab fa-whatsapp me-2"
+              style="color:var(--gold);"></i>03147730687</p>
+          <p style="font-size:.83rem;color:rgba(255,255,255,.55);"><i class="fas fa-envelope me-2"
+              style="color:var(--gold);"></i>afaqtahir0687@gmail.com</p>
+          <p style="font-size:.83rem;color:rgba(255,255,255,.55);"><i class="fas fa-map-marker-alt me-2"
+              style="color:var(--gold);"></i>Lahore, Punjab</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="text-center mt-4" style="font-size:.78rem;color:rgba(255,255,255,.35);">
+        © <span id="yr"></span> Sehat Clinic. All rights reserved. | Lahore, Pakistan
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar Overlay -->
+  <div id="cartOverlay" onclick="closeCart()"
+    style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:10000;backdrop-filter:blur(4px);">
+  </div>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar"
+    style="position:fixed;top:0;right:-420px;width:min(420px,100vw);height:100vh;background:#fff;z-index:10001;transition:right .35s ease;display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(0,0,0,.2);">
+    <!-- Cart Header -->
+    <div
+      style="padding:20px 24px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,var(--g1),var(--g2));">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <i class="fas fa-shopping-cart" style="color:var(--gold);font-size:1.2rem;"></i>
+        <h5 style="margin:0;color:#fff;font-family:'Playfair Display',serif;">Aapka Cart</h5>
+        <span id="cartHeaderCount"
+          style="background:var(--gold);color:#000;font-size:.75rem;font-weight:700;padding:2px 8px;border-radius:50px;">0</span>
+      </div>
+      <button onclick="closeCart()"
+        style="background:rgba(255,255,255,.15);border:none;color:#fff;width:36px;height:36px;border-radius:50%;font-size:1rem;cursor:pointer;">✕</button>
+    </div>
+    <!-- Cart Items -->
+    <div id="cartItems" style="flex:1;overflow-y:auto;padding:16px 24px;">
+      <div id="cartEmpty" style="text-align:center;padding:60px 20px;">
+        <i class="fas fa-shopping-bag" style="font-size:3rem;color:#e5e7eb;margin-bottom:16px;display:block;"></i>
+        <p style="color:#9ca3af;font-size:.95rem;">Cart khali hai<br><span style="font-size:.82rem;">Koi product add
+            karein</span></p>
+      </div>
+    </div>
+    <!-- Cart Footer -->
+    <div id="cartFooter" style="display:none;padding:20px 24px;border-top:1px solid #f0f0f0;background:#fafafa;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:.85rem;color:#6b7280;">
+        <span>Total Items:</span><span id="cartTotalItems">0</span>
+      </div>
+      <div
+        style="display:flex;justify-content:space-between;margin-bottom:16px;font-weight:700;font-size:1rem;color:var(--g1);">
+        <span>WhatsApp pe order karein</span>
+      </div>
+      <button onclick="orderViaWhatsApp()"
+        style="width:100%;background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;border:none;padding:14px;border-radius:50px;font-weight:700;font-size:.95rem;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;">
+        <i class="fab fa-whatsapp"></i> Order Now on WhatsApp
+      </button>
+      <button onclick="clearCart()"
+        style="width:100%;background:transparent;color:#ef4444;border:1px solid #ef4444;padding:10px;border-radius:50px;font-weight:600;font-size:.85rem;cursor:pointer;margin-top:8px;">
+        <i class="fas fa-trash me-1"></i> Cart Saaf Karein
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923147730687" class="wa-float" target="_blank">
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll to Top -->
+  <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Added to cart mini toast -->
+  <div id="miniToast"
+    style="position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--g1);color:#fff;padding:12px 22px;border-radius:50px;font-size:.85rem;font-weight:600;z-index:9999;transition:transform .3s ease;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.2);">
+    <i class="fas fa-check-circle me-2" style="color:var(--gold);"></i><span id="miniToastMsg">Cart mein add ho
+      gaya!</span>
+  </div>
+
+  <!-- Validation Error Modal -->
+  <div class="modal fade" id="validationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius:16px;border:none;">
+        <div class="modal-header" style="border:none;padding:20px 24px 0;">
+          <h5 class="modal-title" style="font-family:'Playfair Display',serif;color:var(--g1);font-weight:700;">
+            <i class="fas fa-exclamation-circle me-2" style="color:#ef4444;"></i>Required Fields
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="padding:20px 24px 24px;">
+          <p style="color:#6b7280;font-size:.95rem;margin:0;">Please fill all required fields (Naam, Phone Number, aur
+            Problem select karein).</p>
+        </div>
+        <div class="modal-footer" style="border:none;padding:0 24px 24px;">
+          <button type="button" class="btn-wa" data-bs-dismiss="modal"
+            style="padding:10px 24px;border:none;cursor:pointer;">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ── CART SYSTEM ──
+    let cart = [];
+
+    function openCart() {
+      document.getElementById('cartSidebar').style.right = '0';
+      document.getElementById('cartOverlay').style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCart() {
+      document.getElementById('cartSidebar').style.right = '-420px';
+      document.getElementById('cartOverlay').style.display = 'none';
+      document.body.style.overflow = '';
+    }
+
+    function showMiniToast(msg) {
+      const t = document.getElementById('miniToast');
+      document.getElementById('miniToastMsg').textContent = msg;
+      t.style.transform = 'translateX(-50%) translateY(0)';
+      setTimeout(() => { t.style.transform = 'translateX(-50%) translateY(80px)'; }, 2500);
+    }
+
+    function updateCartUI() {
+      const totalItems = cart.reduce((s, i) => s + i.qty, 0);
+      // Badge in navbar
+      const badge = document.getElementById('cartBadge');
+      if (badge) { badge.textContent = totalItems; badge.style.display = totalItems > 0 ? 'flex' : 'none'; }
+      document.getElementById('cartHeaderCount').textContent = totalItems;
+      document.getElementById('cartTotalItems').textContent = totalItems;
+
+      const itemsEl = document.getElementById('cartItems');
+      const emptyEl = document.getElementById('cartEmpty');
+      const footerEl = document.getElementById('cartFooter');
+
+      if (cart.length === 0) {
+        emptyEl.style.display = 'block';
+        footerEl.style.display = 'none';
+        itemsEl.innerHTML = '';
+        itemsEl.appendChild(emptyEl);
+        return;
+      }
+      emptyEl.style.display = 'none';
+      footerEl.style.display = 'block';
+
+      itemsEl.innerHTML = cart.map((item, i) => `
+    <div style="display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid #f3f4f6;">
+      <div style="width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,${item.color1},${item.color2});display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <i class="fas ${item.icon}" style="color:rgba(255,255,255,.9);font-size:1.3rem;"></i>
+      </div>
+      <div style="flex:1;min-width:0;">
+        <div style="font-weight:600;font-size:.88rem;color:var(--g1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${item.name}</div>
+        <div style="font-size:.75rem;color:#9ca3af;margin-top:2px;">${item.type}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+        <button onclick="changeQty(${i},-1)" style="width:28px;height:28px;border-radius:50%;border:1.5px solid #e5e7eb;background:#fff;cursor:pointer;font-size:1rem;color:#374151;display:flex;align-items:center;justify-content:center;">−</button>
+        <span style="font-weight:700;font-size:.9rem;min-width:20px;text-align:center;">${item.qty}</span>
+        <button onclick="changeQty(${i},1)" style="width:28px;height:28px;border-radius:50%;border:none;background:var(--g2);color:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">+</button>
+        <button onclick="removeItem(${i})" style="width:28px;height:28px;border-radius:50%;border:none;background:#fee2e2;color:#ef4444;cursor:pointer;font-size:.75rem;display:flex;align-items:center;justify-content:center;margin-left:4px;"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    function changeQty(i, delta) {
+      cart[i].qty += delta;
+      if (cart[i].qty <= 0) cart.splice(i, 1);
+      updateCartUI();
+    }
+    function removeItem(i) {
+      cart.splice(i, 1);
+      updateCartUI();
+    }
+    function clearCart() {
+      cart = [];
+      updateCartUI();
+    }
+
+    function orderViaWhatsApp() {
+      if (cart.length === 0) return;
+      const list = cart.map(i => `• ${i.name} x${i.qty}`).join('\n');
+      const msg = `Assalam o Alaikum! Mujhe yeh products order karne hain:\n\n${list}\n\nPlease price aur delivery details batayein.`;
+      window.open(`https://wa.me/923147730687?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // Add to cart buttons
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const card = this.closest('.prod-card') || this.closest('.wprod-card');
+        const name = card.querySelector('h5').textContent.trim();
+        const isWomen = !!this.closest('.wprod-card');
+        const iconEl = card.querySelector('.prod-top i, .wprod-top i');
+        const icon = iconEl ? iconEl.className.replace('fas ', '').replace(' d-block', '').trim() : 'fa-leaf';
+        const c1 = isWomen ? 'var(--rose1)' : 'var(--g1)';
+        const c2 = isWomen ? 'var(--rose3)' : 'var(--g2)';
+        const type = isWomen ? 'Khawateen Product' : 'Mard Product';
+
+        const existing = cart.find(i => i.name === name);
+        if (existing) { existing.qty++; }
+        else { cart.push({ name, icon, color1: c1, color2: c2, type, qty: 1 }); }
+
+        updateCartUI();
+        showMiniToast(`"${name}" cart mein add ho gaya!`);
+      });
+    });
+
+    // Navbar scroll
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      const tb = document.getElementById('topBtn');
+      tb.style.display = window.scrollY > 300 ? 'flex' : 'none';
+    });
+
+    // Top btn
+    document.getElementById('topBtn').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Contact form
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const n = document.getElementById('cname').value.trim();
+      const p = document.getElementById('cphone').value.trim();
+      const prob = document.getElementById('cproblem').value;
+      const m = document.getElementById('cmsg').value.trim();
+
+      // Validation: Check if required fields are empty
+      if (!n || !p || !prob) {
+        const validationModal = new bootstrap.Modal(document.getElementById('validationModal'));
+        validationModal.show();
+        return;
+      }
+
+      const txt = `Assalam o Alaikum! Mera naam ${n} hai aur phone number ${p} hai. Mujhe ${prob} ki problem hai.${m ? ' Details: ' + m : ''} Consultation chahiye.`;
+      window.open(`https://wa.me/923147730687?text=${encodeURIComponent(txt)}`, '_blank');
+    });
+
+    // Counter animation
+    const counters = document.querySelectorAll('[data-target]');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target, target = +el.dataset.target;
+          let cur = 0; const step = target / 60;
+          const t = setInterval(() => { cur += step; if (cur >= target) { el.textContent = target.toLocaleString() + (target >= 100 ? '%' : '+'); clearInterval(t); } else el.textContent = Math.floor(cur).toLocaleString(); }, 25);
+          obs.unobserve(el);
+        }
+      });
+    });
+    counters.forEach(c => obs.observe(c));
+
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+
+</html>
