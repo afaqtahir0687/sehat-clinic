@@ -979,6 +979,20 @@
     // ── CART SYSTEM ──
     let cart = [];
 
+    // Load cart from localStorage on page load
+    function loadCart() {
+      const savedCart = localStorage.getItem('sehatCart');
+      if (savedCart) {
+        cart = JSON.parse(savedCart);
+        updateCartUI();
+      }
+    }
+
+    // Save cart to localStorage
+    function saveCart() {
+      localStorage.setItem('sehatCart', JSON.stringify(cart));
+    }
+
     function openCart() {
       document.getElementById('cartSidebar').style.right = '0';
       document.getElementById('cartOverlay').style.display = 'block';
@@ -1042,14 +1056,17 @@
       cart[i].qty += delta;
       if (cart[i].qty <= 0) cart.splice(i, 1);
       updateCartUI();
+      saveCart();
     }
     function removeItem(i) {
       cart.splice(i, 1);
       updateCartUI();
+      saveCart();
     }
     function clearCart() {
       cart = [];
       updateCartUI();
+      saveCart();
     }
 
     function orderViaWhatsApp() {
@@ -1076,9 +1093,13 @@
         else { cart.push({ name, icon, color1: c1, color2: c2, type, qty: 1 }); }
 
         updateCartUI();
+        saveCart();
         showMiniToast(`"${name}" cart mein add ho gaya!`);
       });
     });
+
+    // Load cart from localStorage on page load
+    loadCart();
 
     // Navbar scroll
     const nav = document.getElementById('mainNav');
